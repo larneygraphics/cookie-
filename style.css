@@ -1,0 +1,321 @@
+body{
+  margin: 0;
+  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+  background-color: #faf3f3;
+}
+html{
+  scroll-behavior: smooth;
+
+}
+section {
+  margin-bottom: 40px;
+}
+
+header{
+  justify-content: space-between;
+  display: flex;
+  align-items: center;
+  padding: 15px 20px;
+  background-color: #f06d25;
+  position: sticky;
+  top: 0;
+  z-index: 10;
+
+}
+
+.logo{
+  display: flex;
+  align-items: center;
+  gap: 9px;
+  font-weight: bold;
+  color: white;
+  font-size: 39px;
+}
+
+.logo img{
+  height: 40px;
+  width: auto;
+  background-color: white;
+  border-radius: 12px;
+  padding: 8px 8px;
+}
+nav{
+  display: flex;
+  align-items: center;
+}
+ 
+nav a {
+  color: white;
+  text-decoration: none;
+  font-size: 19px;
+  transition: color 0.3s ease;
+  margin-left: 20px;
+
+}
+nav a:hover {
+  background-color: #fff0e5;
+  padding: 8px;
+  border-radius: 9px;
+  color: #f06d25;
+  transform: scale(1);
+}
+
+.hero {
+  position: relative;
+  background-image: 
+    linear-gradient(to top, rgba(190, 77, 11, 0.685), transparent),
+    url('./KUGEMAAsset 3KIP .png');
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  color: rgb(85, 32, 32);
+  min-height: 60vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  align-items: center;
+  text-align: center;
+  padding: 50px 30px;
+  box-sizing: border-box;
+  overflow: hidden;
+}
+
+
+
+
+.hero a{
+   background-color: #faf3f3;
+   box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+   padding: 12px;
+   border-radius:10px ;
+   padding-left: 5px;
+   padding-inline: 20px;
+   font-size: 30px;
+   text-decoration: none;
+   color: #821a1a;
+   text-align: end;
+   
+
+   }
+   
+   
+
+ .hero a:hover{
+  animation: forwards;
+  transition: all 0.3s ease;
+  transform: scale( 1.05);
+  color: #f06d25; 
+    box-shadow: 0 4px 10px rgba(240, 109, 37, 0.3);
+}
+
+#products{
+  align-items: center;
+  text-align: center;
+  padding: 10px 20px;
+}
+ 
+#products h2{
+  font-size: 2rem;
+  margin-bottom: 20px;
+  color: #821a1a;
+
+}
+#products h3{
+  color: #f06d25;
+  text-align: left;
+  margin-left: 120px;
+  
+}
+
+.container {
+  width: 100%;
+  max-width: 1200px;
+  margin: auto;
+}
+
+.container {
+  flex-wrap: wrap;
+  display: flex;
+  gap: 20px;
+  justify-content: center;
+  align-items: flex-start;
+  padding: 20px;
+  background: #f8d9b6; /* Optional: visual box */
+  border-radius: 12px;
+  margin: 0 auto;
+  width: fit-content;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+}
+
+.card {
+  position: relative;
+  overflow: hidden;
+  width: 250px;
+  height: 300px;
+  border-radius: 10px;
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease;
+  cursor: pointer;
+  display: flex;
+  flex-direction: column;
+}
+
+.card img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  transition: transform 0.5s ease;
+}
+
+.card-content {
+  background: rgba(0, 0, 0, 0.6);
+
+  align-items: center;
+  position: absolute;
+  bottom: 0;
+  left: 0; /* Changed from right: 0 for consistency with full width */
+  width: 100%;
+  padding: 16px; /* Changed from 1px to add breathing room */
+  background: #821a1a;
+  color: white;
+  transform: translateY(100%);
+  opacity: 0;
+  transition: transform 0.4s ease, opacity 0.4s ease;
+  z-index: 2;
+  box-sizing: border-box; /* Ensures padding fits inside width */
+}
+.card-content h3{
+  margin: 0;
+}
+
+.card:hover img {
+  transform: scale(1.1);
+}
+
+.card:hover .card-content {
+  transform: translateY(0);
+  opacity: 0.9;
+}
+#viewall{ 
+  align-items: center;
+  text-align: center;
+  padding: 20px 10px;
+}
+
+#viewall a{
+  text-align: center;
+  background-color:#821a1a;
+  padding: 17px;
+  color: white;
+  text-decoration: none;
+  border-radius: 11px;
+  font-size: 20px;
+}
+
+#viewall a:hover{
+  background-color: #f06d25;
+   animation: forwards;
+  transition: all 0.3s ease;
+}
+
+#about {
+  align-items: center;
+  justify-content: space-between;
+  display: flex;
+  flex-wrap: wrap;
+  margin-top: 10px;
+  padding: 27px;
+}
+
+
+#about h2{
+  display: inline-block;
+  background-color: #821a1a;
+  padding: 12px;
+color: #ffffff;
+border-radius: 9px;
+}
+ 
+
+#about p{
+  color: #f06d25;
+}
+.container .testimonialsh2{
+  display: inline-block;
+  background-color: #821a1a;
+  padding: 12px;
+color: #ffffff;
+border-radius: 9px;
+}
+
+#testimonials {
+  background-color: #fff8f2;
+  padding: 40px 20px;
+  text-align: center;
+}
+
+#testimonials h2 {
+  font-size: 2.5rem;
+  color: #821a1a;
+  margin-bottom: 30px;
+  background-color: #f06d25;
+  display: inline-block;
+  padding: 10px 25px;
+  border-radius: 12px;
+  color: white;
+}
+
+.testimonial-container {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+  justify-content: center;
+}
+
+.testimonial-box {
+  background-color: #f8d9b6;
+  padding: 20px;
+  border-radius: 15px;
+  width: 300px;
+  box-shadow: 0 6px 16px rgba(0, 0, 0, 0.15);
+  transition: transform 0.3s ease;
+}
+
+.testimonial-box:hover {
+  transform: scale(1.03);
+}
+
+.testimonial-box img {
+  width: 100px;
+  height: 100px;
+  border-radius: 5%;
+  object-fit: cover;
+  margin-bottom: 15px;
+  border: 2px solid #821a1a;
+}
+
+.testimonial-box p {
+  font-style: italic;
+  color: #5a2b2b;
+  font-size: 16px;
+  line-height: 1.4;
+}
+.stars {
+  color: #f6b600;
+  font-size: 20px;
+  margin-top: 10px;
+}
+
+#contacts{
+  background-color: #f06d25;
+  padding: 20px;}
+
+  #contacts h2{
+    color: #faf3f3;
+  }
+  #contacts p{
+    color: #faf3f3;
+  }
+  #contacts p a{
+    text-decoration: #821a1a;
+  }
