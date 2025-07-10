@@ -428,7 +428,8 @@ border-radius: 9px;
     color: #faf3f3;
   }
   #contacts p a{
-    text-decoration: #821a1a;
+    color: #821a1a;
+    text-decoration: none;
   }
   .cart-link {
   background-color: #fff0e5;
