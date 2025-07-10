@@ -3,6 +3,11 @@ body{
   font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
   background-color: #faf3f3;
 }
+*{
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
 html{
   scroll-behavior: smooth;
 
@@ -446,4 +451,51 @@ border-radius: 9px;
   max-width: 500px;
   border-radius: 12px;
   text-align: left;
+}
+/* 🛒 Add to Cart Buttons */
+.add-to-cart-btn {
+  background-color: #f06d25;
+  color: white;
+  border: none;
+  padding: 10px 16px;
+  margin-top: 10px;
+  border-radius: 6px;
+  cursor: pointer;
+  font-weight: bold;
+  transition: background-color 0.3s ease;
+}
+
+.add-to-cart-btn:hover {
+  background-color: #d85f1b;
+}
+
+/* 🧺 Cart Section Buttons (Clear & Checkout) */
+#cart-section button {
+  background-color: #333;
+  color: white;
+  border: none;
+  padding: 10px 16px;
+  margin: 10px 8px 0 0;
+  border-radius: 6px;
+  cursor: pointer;
+  font-weight: bold;
+  transition: background-color 0.3s ease;
+}
+
+#cart-section button:hover {
+  background-color: #d85f1b;
+}
+
+/* 📦 Cart Section Layout (Optional Cleanup) */
+#cart-section {
+  background-color: #fff4ed;
+  padding: 20px;
+  margin: 20px;
+  border-radius: 10px;
+  box-shadow: 0 0 10px rgba(240, 109, 37, 0.1);
+}
+
+#cart-items {
+  list-style-type: none;
+  padding: 0;
 }
